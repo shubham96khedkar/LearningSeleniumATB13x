@@ -1,37 +1,31 @@
-🚀 Selenium 4.35 Learning & Implementation
+Selenium 4.35 Learning & Implementation 🚀
 
-This repository is my personal learning space for mastering Web Automation using Selenium 4.x.
-I’ll be following structured notes, assignments, and implementations to cover all key concepts step by step.
+This repository contains my hands-on learning journey with Selenium 4.x Web Automation.
+I’ll be implementing each concept from [TheTestingAcademy - Selenium 4.x Notes by Pramod] and documenting my progress step by step.
 
-📚 Topics Covered
+📘 Topics Covered
 
-I’ll be learning and implementing the following:
+Based on the notes, this repo will include implementations for:
 
-1.Introduction to Selenium
+1. Getting Started with Selenium
 
-* What is Selenium?
-
-* Selenium vs Playwright vs Cypress
-
-* When not to use Selenium
-
-2.Selenium Basics
+* Setting up Java, Maven & IntelliJ/Eclipse
 
 * Running the first Selenium script
 
-* WebDriver Architecture (W3C protocol in Selenium 4)
+* WebDriver architecture & browser drivers
 
-* Browser Drivers & WebDriver Interface
+2. Locators & Web Elements
 
-3.Locators & Interactions
+* findElement vs findElements
 
-* Locators (ID, Name, Class, CSS, XPath, LinkText, etc.)
+* XPath (Absolute, Relative, Functions, Axes)
 
-* Mastering XPath & CSS Selectors
+* CSS Selectors
 
-* Handling HTML Forms, Buttons, Links, and Dynamic Elements
+* Handling forms, text fields, checkboxes, radio buttons
 
-4.Waits in Selenium
+3. Selenium Waits ⏳
 
 * Implicit Wait
 
@@ -39,63 +33,115 @@ I’ll be learning and implementing the following:
 
 * Fluent Wait
 
-5.Web Interactions
+4. Advanced User Interactions
 
-* Handling Alerts, Checkboxes, Radio Buttons
+* Actions class (keyboard & mouse events)
+
+* Handling Alerts, Windows, and iFrames
+
+* File Upload & Download automation
+
+5. Working with Web Data
 
 * Web Tables (Static & Dynamic)
 
-* Windows, Tabs, and iframes
+* SVG & Shadow DOM handling
 
-* Actions Class (Mouse & Keyboard events)
+6. Test Automation Frameworks
 
-* File Uploads & Downloads
+* TestNG integration
 
-6.Advanced Selenium
+* Allure Reporting
+
+* Page Object Model (POM) & Page Factory
+
+7. Data-Driven Testing
+
+* Apache POI for Excel integration
+
+* Property Reader utility
+
+8. Selenium Grid & Parallel Execution
+
+* Grid setup & usage
+
+* Running tests on Docker & BrowserStack
+
+9. Miscellaneous
 
 * JavaScript Executor
 
-* Handling SVG & Shadow DOM
-
-* Data-Driven Testing with Apache POI
-
-* Page Object Model (POM vs Page Factory)
+* Handling Dynamic Elements
 
 * Logging with Log4j
 
-7.Execution & Integration
+* Jenkins CI/CD basics
 
-* Selenium Grid 4 (Standalone, Hub-Node, Distributed)
+🛠 Tech Stack
 
-* Running on Docker
+* Java 11+
 
-* Cloud Execution (BrowserStack)
+* Maven
 
-* CI/CD Integration with Jenkins
+* Selenium 4.35
 
-* AWS Basics for Test Execution
+* TestNG
 
-🛠️ Tools & Setup
+* Allure Reports
 
-* Language: Java
+* Apache POI
 
-* Build Tool: Maven
+* Log4j
 
-* Testing Framework: TestNG
+* Jenkins (for CI/CD)
 
-* Reporting: Allure Reports
+📂 Repository Structure
+selenium-4.35-learning/
+│── src/
+│   ├── main/java/   # Utility & Framework Code
+│   └── test/java/   # Test Cases
+│
+│── pom.xml          # Maven dependencies
+│── README.md        # This file
 
-* IDE: IntelliJ IDEA / Eclipse
+🚀 How to Run
 
-* Version Control: Git & GitHub
+1. Clone the repository:
 
-📌 Assignments & Practice
+git clone https://github.com/your-username/selenium-4x-learning.git
+cd selenium-4.35-learning
 
-Each topic will have:
 
-* ✅ Code implementation
+2. Install dependencies:
 
-* ✅ Hands-on assignments (like automating VWO Login
-)
+mvn clean install
 
-* ✅ Documentation & learnings
+
+3. Run tests:
+
+mvn test
+
+
+4. Generate Allure Report:
+
+allure serve target/allure-results
+
+📌 Progress Tracker
+
+* Run first Selenium script
+
+* Implement all Locators
+
+* Add Waits (Implicit/Explicit/Fluent)
+
+* Automate VWO login (Valid/Invalid)
+
+* Handle Alerts, Windows, iFrames
+
+* Build POM Framework
+
+* Add Apache POI for Data-Driven Testing
+
+* Setup Selenium Grid & Docker
+
+* Integrate with Jenkins
